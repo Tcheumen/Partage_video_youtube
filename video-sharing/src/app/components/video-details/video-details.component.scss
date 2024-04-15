@@ -1,0 +1,12 @@
+/* Exemple de styles pour afficher les composants en colonne */
+.container {
+  display: flex; /* Utiliser Flexbox pour aligner les composants */
+  flex-direction: column; 
+
+}
+
+.component {
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+

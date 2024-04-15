@@ -1,0 +1,85 @@
+<nav class="navbar">
+  <div class="navbar-logo">
+    <img src="../../../assets/images/logoHome.png" alt="Logo Home">
+  </div>
+  <ul class="navbar-menu">
+   <li>
+    <div class="dropdown">
+        <a class="dropbtn"> AUTEURS<i class="fas fa-caret-down"></i></a> <!-- Icône du menu déroulant -->
+        <div class="dropdown-content">
+          <a routerLink="/par-region/afrique">Rédacteur</a>
+          <a routerLink="/par-region/amerique">Invités</a>
+          <a routerLink="/par-region/asie">Contributeurs libres</a>
+        </div>
+      </div>
+   </li>
+    <li><a routerLink="/par-pays">PAR PAYS</a></li>
+    <li>
+      <div class="dropdown">
+        <a class="dropbtn">PAR REGION <i class="fas fa-caret-down"></i></a> <!-- Icône du menu déroulant -->
+        <div class="dropdown-content">
+          <a routerLink="/par-region/afrique">Afrique</a>
+          <a routerLink="/par-region/amerique">Amérique Latine</a>
+          <a routerLink="/par-region/amerique">Amérique du Nord</a>
+          <a routerLink="/par-region/amerique">Arctique</a>
+          <a routerLink="/par-region/asie">Asie</a>
+          <a routerLink="/par-region/amerique">Balkans</a>
+          <a routerLink="/par-region/amerique">BRICS</a>
+          <a routerLink="/par-region/amerique">Etats Baltes</a>
+          <a routerLink="/par-region/amerique">Eurasie</a>
+          <a routerLink="/par-region/europe">Europe</a>
+          <a routerLink="/par-region/oceanie">Océanie</a>
+          <a routerLink="/par-region/amerique">Proche et Moyen-Orient</a>
+        </div>
+      </div>
+    </li>
+    <li>
+     <div class="dropdown">
+        <a class="dropbtn">PAR DOMAINE<i class="fas fa-caret-down"></i></a> <!-- Icône du menu déroulant -->
+        <div class="dropdown-content">
+          <a routerLink="/par-region/afrique">BITD</a>
+          <a routerLink="/par-region/amerique">Conflict Studies</a>
+          <a routerLink="/par-region/amerique">Conseils de lecture</a>
+          <a routerLink="/par-region/amerique">Economie</a>
+          <a routerLink="/par-region/asie">Géopolitique</a>
+          <a routerLink="/par-region/amerique">Guerre économique</a>
+          <a routerLink="/par-region/amerique">Histoire</a>
+          <a routerLink="/par-region/amerique">Politique</a>
+          <a routerLink="/par-region/amerique">Relations Internationales</a>
+          <a routerLink="/par-region/europe">Religion</a>
+          <a routerLink="/par-region/oceanie">Sécurité</a>
+          <a routerLink="/par-region/amerique">Terrorisme</a>
+        </div>
+      </div>
+    </li>
+     <li>
+     <div class="dropdown">
+        <a class="dropbtn">PAR FORMAT<i class="fas fa-caret-down"></i></a> <!-- Icône du menu déroulant -->
+        <div class="dropdown-content">
+          <a routerLink="/par-region/afrique">Articles</a>
+          <a routerLink="/par-region/amerique">Colloques</a>
+          <a routerLink="/par-region/amerique">Conseils de lecture</a>
+          <a routerLink="/par-region/amerique">Entretiens</a>
+          <a routerLink="/par-region/asie">Reportages</a>
+          <a routerLink="/par-region/amerique">Vidéos</a>
+        </div>
+      </div>
+    </li>
+      <li>
+     <div class="dropdown">
+        <a class="dropbtn">PAR FORMAT<i class="fas fa-caret-down"></i></a> <!-- Icône du menu déroulant -->
+        <div class="dropdown-content">
+          <a routerLink="/par-region/afrique">Auto-éditeurs</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="navbar-search" *ngIf="showSearch">
+    <input type="text" placeholder="Rechercher...">
+    <button (click)="toggleSearch()" type="submit">Q<i class="fa fa-search"></i></button>
+  </div>
+  <div class="navbar-search" *ngIf="!showSearch" >
+    <button (click)="toggleSearch()" type="submit">Q<i class="fa fa-search"></i></button>
+  </div>
+  
+</nav>

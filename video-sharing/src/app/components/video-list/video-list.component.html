@@ -1,0 +1,11 @@
+<div class="video-container">
+  <div *ngFor="let video of videos" class="video-wrapper">
+    <iframe width="560" height="315" [src]="video.embedUrl" frameborder="0" allowfullscreen></iframe>
+    <button (click)="likeVideo(video)">Like ({{ video.likes }})</button>
+    <div *ngFor="let comment of video.comments">
+      <div>{{ comment }}</div>
+    </div>
+    <input type="text" placeholder="Add a comment...">
+    <button (click)="addComment(video, newComment)">Comment</button>
+  </div>
+</div>

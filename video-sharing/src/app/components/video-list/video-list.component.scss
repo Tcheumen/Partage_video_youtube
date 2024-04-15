@@ -1,0 +1,13 @@
+.video-container {
+  display: flex; /* Utilisez flexbox pour aligner les vidéos horizontalement */
+  flex-wrap: wrap; /* Permettre aux éléments de s'enrouler sur plusieurs lignes si nécessaire */
+}
+
+.video-wrapper {
+  width: calc(33.33% - 20px); /* 33.33% pour afficher trois vidéos par ligne avec une marge de 10px sur les côtés */
+  margin: 10px; /* Espacement entre les vidéos */
+}
+
+.video-wrapper iframe {
+  width: 100%; /* Pour que la vidéo remplisse toute la largeur du conteneur */
+}
